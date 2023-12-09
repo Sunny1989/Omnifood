@@ -1,0 +1,380 @@
+html {
+  /*
+    font-size:10px;
+
+    16px is default font size.
+    10px/16px = 0.625 -> 62.5%
+
+    Percentage for user's browser font-size settings.
+  */
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: gothamBold;
+  src: url(/src/fonts/GothamRndSSmW05-Bold.woff);
+}
+
+@font-face {
+  font-family: gothamBold2;
+  src: url(/src/fonts/GothamRndSSmW05-Bold.woff2);
+}
+
+@font-face {
+  font-family: gothamBook;
+  src: url(/src/fonts/GothamRndSSmW05-Book.woff);
+}
+
+@font-face {
+  font-family: gothamBook2;
+  src: url(/src/fonts/GothamRndSSmW05-Book.woff2);
+}
+
+@font-face {
+  font-family: gothamMedium;
+  src: url(/src/fonts/GothamRndSSmW05-Medium.woff);
+}
+
+@font-face {
+  font-family: gothamMedium2;
+  src: url(/src/fonts/GothamRndSSmW05-Medium.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #444;
+  background-color: #2975e7;
+}
+
+.container {
+  background-color: white;
+  margin: 20rem;
+  border-radius: 10px;
+  height: max-content;
+}
+
+header {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+section {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 2rem;
+}
+
+.table-device {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: gothamBold;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  color: #183462;
+}
+
+.gcash-logo {
+  width: 15%;
+  margin-top: 2%;
+}
+
+.title {
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.usecase-logo {
+  width: 20%;
+}
+
+.user-name {
+  color: #183462;
+  font-size: 2rem;
+  font-family: gothamBold;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.device-details {
+  color: #183462;
+  font-family: gothamBook;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 3%;
+}
+
+table {
+  color: #183462;
+  margin: 0 auto;
+  margin-top: 1%;
+  font-family: gothamBook;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  border-collapse: collapse;
+  width: 30%;
+  justify-self: center;
+  min-width: fit-content;
+}
+
+td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+td:nth-child(1) {
+  width: 40%;
+  color: #183462;
+  font-family: gothamBook;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+td:nth-child(2) {
+  width: 60%;
+  color: #183462;
+  font-family: gothamBold;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f9fd;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.td-title {
+  border-right: 1px solid #eeeff1;
+  border-bottom: 1px solid #eeeff1;
+  width: 40px;
+}
+
+.td-desc {
+  border-bottom: 1px solid #eeeff1;
+}
+
+.unlink {
+  color: #183462;
+  font-family: gothamBook;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 3%;
+}
+
+.footer-desc {
+  background-color: lightgray;
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 3%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #6780a9;
+  text-align: center;
+  font-family: gothamBook;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    background-color: white;
+    margin: 3rem;
+    width: 300px;
+    height: fit-content;
+  }
+
+  .gcash-logo {
+    width: 40%;
+    margin-top: 2rem;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .footer-desc {
+    font-size: 1.2rem;
+  }
+  .usecase-logo {
+    width: 30%;
+  }
+  .unlink {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .container {
+    background-color: white;
+    margin: 1rem;
+    width: 300px;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .container {
+    background-color: white;
+    margin: 5rem;
+    width: 300px;
+    height: fit-content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    background-color: white;
+    margin: 5rem;
+    height: fit-content;
+  }
+
+  .gcash-logo {
+    width: 30%;
+    margin-top: 2rem;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .footer-desc {
+    font-size: 1.2rem;
+  }
+  .usecase-logo {
+    width: 20%;
+  }
+  .unlink {
+    margin-top: 5%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    background-color: white;
+    margin: 12rem;
+    border-radius: 10px;
+    height: max-content;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    background-color: white;
+    margin: 20rem;
+    border-radius: 10px;
+    height: max-content;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    background-color: white;
+    margin: 22rem;
+    border-radius: 10px;
+    height: max-content;
+  }
+  header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-family: Gotham Rnd SSm;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    color: #183462;
+  }
+
+  .gcash-logo {
+    width: 25%;
+    margin-top: 2%;
+  }
+
+  .title {
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .usecase-logo {
+    width: 15%;
+  }
+
+  table {
+    min-width: 30%;
+    width: fit-content;
+  }
+}

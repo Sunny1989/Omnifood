@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 24px;
+        color: #343a40;
+      }
+
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+      nav {
+        color: white;
+        background-color: #343a40;
+        grid-row: 1 / -1;
+      }
+      menu {
+        background-color: #7048e8;
+        color: white;
+        grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+      .email-list {
+        background-color: #e9ecef;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        overflow: auto;
+        flex-shrink: 0;
+      }
+
+      .btn-menu {
+        width: auto;
+        height: 30px;
+        padding: 5px;
+      }
+
+      .btn-menu:first-child {
+        margin-left: 10px;
+      }
+
+      .btn-menu:last-child {
+        margin-left: auto;
+        margin-right: 10px;
+      }
+
+      .email {
+        width: 120px;
+        height: 40px;
+        color: #424950;
+        background-color: #343a40;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>Nav</nav>
+      <menu>
+        <button class="btn-menu">New</button>
+        <button class="btn-menu">Reply</button>
+        <button class="btn-menu">Forward</button>
+        <button class="btn-menu">Mark unread</button>
+        <button class="btn-menu">Trash</button>
+      </menu>
+      <section class="email-list">
+        <div class="email">Email 1</div>
+        <div class="email">Email 2</div>
+        <div class="email">Email 3</div>
+        <div class="email">Email 4</div>
+        <div class="email">Email 5</div>
+        <div class="email">Email 6</div>
+        <div class="email">Email 7</div>
+        <div class="email">Email 8</div>
+        <div class="email">Email 9</div>
+        <div class="email">Email 10</div>
+      </section>
+      <main class="email-view">Email View</main>
+      <aside class="additional-info">Additional Info</aside>
+    </div>
+  </body>
+</html>

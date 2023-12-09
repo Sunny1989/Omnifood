@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    <style>
+      .pagination {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .icon-style {
+        width: 24px;
+        height: 24px;
+        color: #087f5b;
+      }
+
+      .btn-left,
+      .btn-right {
+        width: 48px;
+        height: 48px;
+        background: white;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .btn-left:hover,
+      .btn-right:hover {
+        background: #087f5b;
+      }
+
+      .btn-left:hover .icon-style,
+      .btn-right:hover .icon-style {
+        stroke: white;
+      }
+
+      .btn-number:link,
+      .btn-number:visited {
+        text-decoration: none;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        color: black;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn-number:hover,
+      .btn-number:active,
+      .btn-number.selected {
+        color: white;
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-style"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <a class="btn-number" href="#">1 </a>
+      <a class="btn-number" href="#">2 </a>
+      <a class="btn-number selected" href="#">3 </a>
+      <a class="btn-number" href="#">4 </a>
+      <a class="btn-number" href="#">5 </a>
+      <span class="dots">...</span>
+      <a class="btn-number" href="#">15</a>
+
+      <button class="btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-style"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .chevron-down {
+        width: 20px;
+        height: 20px;
+      }
+      .accord-container {
+        width: 400px;
+
+        line-height: 1.2;
+      }
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+      .item-detail {
+        grid-column: 2;
+        display: none;
+      }
+      .item-list {
+        grid-column: 2;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .accord-all-container {
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .open {
+        border-top: 2px solid green;
+      }
+
+      .open .item-detail {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accord-all-container">
+      <div class="accord-container">
+        <div class="item">
+          <p class="item-number">02</p>
+          <p class="item-desc">How long do I have to return my chair?</p>
+          <p class="item-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="chevron-down"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </p>
+
+          <div class="item-detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            maxime modi tempore fugit quis autem eligendi alias molestias
+            molestiae ratione maiores ex temporibus, tempora impedit praesentium
+            corrupti iure cupiditate illo.
+            <div class="item-list">
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Earum, fugit dolore! Recusandae, similique possimus omnis nisi
+                  quos iusto
+                </li>
+                <li>
+                  adipisci delectus facilis sint ex consequuntur eveniet
+                  pariatur quia voluptas repellat amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accord-container open">
+        <div class="item">
+          <p class="item-number">02</p>
+          <p class="item-desc">How long do I have to return my chair?</p>
+          <p class="item-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="chevron-down"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </p>
+
+          <div class="item-detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            maxime modi tempore fugit quis autem eligendi alias molestias
+            molestiae ratione maiores ex temporibus, tempora impedit praesentium
+            corrupti iure cupiditate illo.
+            <div class="item-list">
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Earum, fugit dolore! Recusandae, similique possimus omnis nisi
+                  quos iusto
+                </li>
+                <li>
+                  adipisci delectus facilis sint ex consequuntur eveniet
+                  pariatur quia voluptas repellat amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accord-container">
+        <div class="item">
+          <p class="item-number">02</p>
+          <p class="item-desc">How long do I have to return my chair?</p>
+          <p class="item-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="chevron-down"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </p>
+
+          <div class="item-detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            maxime modi tempore fugit quis autem eligendi alias molestias
+            molestiae ratione maiores ex temporibus, tempora impedit praesentium
+            corrupti iure cupiditate illo.
+            <div class="item-list">
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Earum, fugit dolore! Recusandae, similique possimus omnis nisi
+                  quos iusto
+                </li>
+                <li>
+                  adipisci delectus facilis sint ex consequuntur eveniet
+                  pariatur quia voluptas repellat amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables Example</title>
+    <style>
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+        border: none;
+      }
+
+      thead {
+        height: 50px;
+      }
+
+      table {
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        border: none;
+      }
+      thead th {
+        background-color: #087f5b;
+        color: whitesmoke;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>Chair</th>
+        <th>The Laid Back</th>
+        <th>The Worker Bee</th>
+        <th>The Chair 4/2</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>16 kg</td>
+          <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

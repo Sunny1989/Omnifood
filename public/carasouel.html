@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caraousel Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .carasouel-container {
+        margin: 100px;
+        background-color: #087f5b;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        gap: 70px;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        position: relative;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .description {
+        color: #e6fcf5;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 10px;
+      }
+
+      .img-caras {
+        border-radius: 5px;
+        scale: 2.3;
+      }
+
+      .icon-style {
+        color: #087f5b;
+        height: 20px;
+        padding-top: 2px;
+      }
+
+      .btn-right {
+        transform: translate(130%, 0);
+        background-color: white;
+        border: none;
+        width: 130px;
+        height: 30px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      }
+
+      .btn-left {
+        transform: translate(-130%, 0);
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        width: 130px;
+        height: 30px;
+        align-items: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      }
+
+      .author {
+        font-size: 16px;
+      }
+
+      .position {
+        font-size: 14px;
+      }
+
+      .dots {
+        display: flex;
+        gap: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(0, 20px);
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: white;
+        border: 2px solid #087f5b;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .fill {
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carasouel-container">
+      <button class="btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-style"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <img
+        class="img-caras"
+        src="/src/images/challenges.jpg"
+        width="100"
+        height="100"
+        alt="this is test image"
+      />
+
+      <div class="description">
+        <blockquote>
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt in
+          quam fugit asperiores expedita labore ducimus nostrum. Sed non
+          dolorem, iusto reiciendis sit assumenda, soluta voluptates voluptate
+          magni ex molestias!"
+        </blockquote>
+        <p class="author">Maria de Almedia</p>
+        <p class="position">Senior product Manager at EDP Comercial</p>
+      </div>
+
+      <button class="btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-style"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+
+      <div class="dots">
+        <button class="dot fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
